@@ -1,0 +1,16 @@
+<?php
+ echo "Text to array conversion";
+ $text="Mango Apple Banana papaya";
+ echo "<br>String is: ",$text;
+ $fruits=explode(" ",$text);
+ print_r("Array is: ",$fruits);
+ echo "Array to text conversion";
+ $cities[0]="Hyderabad";
+ $cities[1]="Mumbai";
+ $cities[2]="Chennai";
+ print_r("Array is:",$cities);
+ $text1=implode(",",$cities);
+ print_r("Text is: ",$text1);
+?>
+
+ 

@@ -1,0 +1,31 @@
+  //echo $db;
+    $q1="select * from login1 where name like '{$_REQUEST['name']}';";
+    $r1=mysqli_query($con,$q1) or die("Query failed:".mysql_error());
+    if ($r1)
+    {
+       $rc1=mysqli_num_rows($r1);
+       if($rc1>=1)
+       {
+          $q2="select * from login where name like '{$_REQUEST['name']}' and password like '{$_REQUEST['password']}';";
+          if($r2=mysqli_query($con,$q2))
+          {
+            $rc2=mysqli_num_rows($r2);
+            if($rc2>=1)
+            {
+              echo "Welcome ",$_REQUEST['username'],", you are successfully logged in!!";
+            }
+            else
+            {
+              echo "Password mismatch!!Enter the correct credentials!!";
+            }
+
+          }
+         
+       }
+       else
+       {
+         echo " Could not find you. Enter details to login <br> ";
+        echo " Enter name full name and password";	
+	
+       }
+  }

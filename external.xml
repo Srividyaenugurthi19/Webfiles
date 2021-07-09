@@ -1,0 +1,7 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE employee SYSTEM "external.dtd">
+<employee id="1">
+  <name>Opal Kole</name>
+  <designation discipline="Web developer" >Senior Engineer</designation>
+  <email>email@myemail.com</email>
+</employee>

@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="yes"?>
+<!DOCTYPE course[
+<!ELEMENT course (name, curriculum, teacher+, student+)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT curriculum (#PCDATA)>
+<!ELEMENT teacher (#PCDATA)>
+<!ELEMENT student (#PCDATA)>
+]>
+<course>
+<name>Web Technologies</name>
+<curriculum>AICTE</curriculum>
+<teacher>Divya Raj mam</teacher>
+<teacher>Keerthi Chandrika mam</teacher>
+<student>Srividya</student>
+<student>Bhargavi</student>
+<student>Kavitha</student>
+<student>Sandhya</student>
+</course>

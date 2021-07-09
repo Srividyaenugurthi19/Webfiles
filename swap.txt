@@ -1,0 +1,6 @@
+<?php
+ $a=55;
+ $b=22;
+ echo"<br> Before swapping {$a}: $a and $b";
+ echo "<br> maximum element in $a and $b:",max($a,$b);
+?>
